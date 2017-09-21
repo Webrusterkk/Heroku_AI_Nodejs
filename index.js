@@ -28,7 +28,7 @@ function callZoneApi (zone) {
     try {
       
               var connection = mysql.createConnection({
-                  host: "192.168.2.99",
+                  host: "183.82.98.147",
                   user: "talk",
                   password: "talk@123",
                   database: "talk"
