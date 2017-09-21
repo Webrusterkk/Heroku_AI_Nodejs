@@ -3,8 +3,7 @@ const http = require('http');
 const mysql      = require('mysql');
 exports.ai_storeprice = (req, res) => {
   // Get the zone and date from the request
-  let zone =  "India";
-  //req.body.result.parameters['shipping-zone']; // shipping zone is a required param
+  let zone =  req.body.result.parameters['shipping-zone']; // shipping zone is a required param
  
  let cost = {'Europe':100, 'North America':200, 'South America':300, 'Asia':400, 'Africa':500}
  
